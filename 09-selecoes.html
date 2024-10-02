@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>09 - seleções</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<!-- conceito de tabelles e css também fica com o layout mais semantico também.-->
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/* STYLE THE HEADER*/
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+		}
+
+		/* criar 2 colunas que esteja lado a lado*/
+		nav {
+			float: left;
+			width: 30%;
+			height: 300px;
+			background: #ccc;
+			padding: 20px;
+		}
+
+		nav ul {
+			list-style-type: nome;
+			padding: 0;
+		}
+
+		article {
+			float: left;
+			padding: 20px;
+			width: 70%;
+			background-color: #f1f1f1;
+			height: 300px;
+		}
+
+		section ::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+
+		/* Responsive layout*/
+		@media (max-width: 600px) {
+
+			nav,
+			article {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h6>Turma T003 Senac - Patos de Minas</h6>
+	</header>
+	<Section>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="corpo_html.html">Corpo Html</a></li>
+				<li><a href="01_listaselinks.html">Listas e Links</a></li>
+				<li><a href="02_tabelaselayouts.html">Tabelas e Layouts</a></li>
+				<li><a href="06-diagramacao_html.html">Diagramação</a></li>
+				<li><a href="08-contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		<article>
+			<form>
+				<div>
+					<h6>Seleção Simples</h6>
+					<label> Qual estação do ano você mais gosta?</label>
+					<input type="radio" name="estacao" value="verao"> Verão
+					<input type="radio" name="estacao" value="primavera"> Primavera
+					<input type="radio" name="estacao" value="outono"> Outono
+					<input type="radio" name="estacao" value="inverno"> Inverno
+				</div>
+
+				<div>
+					<h6>Seleções Multiplas</h6>
+					<label>Quais os três melhores times do Brasil</label>
+					<input type="checkbox" checked name="time" value="CRUZEIRO"> CRUZEIRO
+					<input type="checkbox" name="time" value="america"> América
+					<input type="checkbox" name="time" value="palmeiras"> Palmeiras
+					<input type="checkbox" name="time" value="curintia"> Curintia
+					<input type="checkbox" disabled name="time" value="galinhas"> FRANGAS
+				</div>
+
+				<div>
+					<h6> Lista de Seleção </h6>
+					<label> Qual a sua cor preferida? </label>
+					<select>
+						<option value="azul"> AzulCelesteCruzeiro</option>
+						<option value="vermelho"> Vermelho</option>
+						<option value="verde"> Verde</option>
+						<option value="rosa"> Rosinha</option>
+					</select>
+				</div>
+				<input type="submit">
+			</form>
+		</article>
+
+	</Section>
+	</p>
+	<p>
+	<footer>
+		<h1>
+			.
+		</h1>
+	</footer>
+	</p>
+</body>
+
+</html>
